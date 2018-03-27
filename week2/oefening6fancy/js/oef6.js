@@ -1,15 +1,14 @@
-function showResult(){
-    let nrOne = document.getElementById('nrOne');
-    let nrTwo = document.getElementById('nrTwo');
-    let button = document.getElementById('button');
+let button = document.getElementById('button');
+
+button.addEventListener('click', function(){
+    let nrOne = parseInt(document.getElementById('nrOne'));
+    let nrTwo = parseInt(document.getElementById('nrTwo'));
+    let plaats = document.getElementById('place');
 
     if(nrOne > nrTwo){
-        document.write(nrOne + ' ' + "is het grootste getal.");
+        console.log(parseInt(nrOne) + ' ' + "is het grootste getal.");
     }
     else{
-        document.write(nrTwo + ' ' + "is het grootste getal.");
-    };
-};
-
-button.addEventListener('click', showResult());
-
+        console.log(parseInt(nrTwo) + ' ' + "is het grootste getal.");
+    }
+})
