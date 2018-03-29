@@ -31,11 +31,12 @@ getJSON('http://api.icndb.com/jokes/random?firstName='+firstN+'&amp&lastName='+l
     }
     console.log(data.value.joke);
 
-    let lijst= document.getElementById('ul');
+    let lijst= document.querySelector('ul');
     let item= document.createElement('li');
     let mijnTextNode = document.createTextNode(data.value.joke);
     console.log(mijnTextNode);
-    lijst.appendChild(mijnTextNode);
+    item.appendChild(mijnTextNode);
+    lijst.appendChild(item);
 
     // document.write(data.value.joke)
     });
