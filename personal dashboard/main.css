@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+
+.paragraaf{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.vet{
+    font-weight: 500;
+}
