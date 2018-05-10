@@ -1,14 +1,17 @@
-var molNaam = document.getElementById('mol');
-var knop = document.getElementById('knopp');
+// 2 elementen uit DOM tree ophalen
+let molNaam = document.getElementById('mol');
+let knop = document.getElementById('knopp');
 
-molNaam.value = localStorage.getItem('mol'); // Elements populated
-knop.value = localStorage.getItem('knopp'); // by localStorage data
+// 2 elementen ophalen uit localStorage
+molNaam.value = localStorage.getItem('mol');
+knop.value = localStorage.getItem('knopp');
 
-molNaam.addEventListener('input', function() { // Data saved on keyup
+// let molNaam koppelen aan EventListener + opslaan in localStorage
+molNaam.addEventListener('input', function() {
     localStorage.setItem('mol', molNaam.value);
-    console.log(mol)
 }, false);
 
-knop.addEventListener('input', function() { // Data saved on keyup
+// let knop koppelen aan EventListener + opslaan in localStorage
+knop.addEventListener('click', function() { // Data saved on keyup
     localStorage.setItem('knopp', knop.value);
 }, false);

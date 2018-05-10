@@ -7,8 +7,21 @@
     <title>Oefening 2 Formulier</title>
 </head>
 <body>
+    <form>
+        <label for="t-shirt">Welke kleur T-shirt had de mol vandaag aan?</label>
+        <input id="t-shirt" type="text" required pattern="rood|groen|grijs|zwart"> <br>
+        <label for="auto">Sliep de mol vannacht in de auto?</label>
+        <input name="auto" id="auto" id="auto1" type="radio" value="ja"> <label for="auto1">ja</label>
+        <input name="auto" id="auto" id="auto2" type="radio" value="nee"> <label for="auto1">nee</label> <br>
+        <label for="oud">Hoe oud schat je de mol?</label>
+        <input id="oud" type="number" min="21" max="62"> <br>
+        <label for="mail">Als de mol een e-mail adres heeft met volgend patroon: voornaam@demol.be; wat is dan zijn of haar e-mail adres?</label>
+        <input id="mail" type="e-mail"> <br>
+        <label for="argumentatie">Argumenteer je antwoord</label>
+        <input id="argumentatie" type="text" minlength="100" pattern=@demol.be> <br>
+        <button>Indienen</button>
+    </form>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
